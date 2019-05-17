@@ -1,0 +1,30 @@
+configure_logrotate: yes
+configure_systemd: yes
+configure_docker: yes
+
+#
+# logrotate
+#
+logrotate__config:
+    - filename: 'general-logs'
+      log: '/var/log/*.log'
+      state: 'present'
+      options: |
+          rotate 2
+          size 5M
+          weekly
+          compress
+          missingok
+          notifempty
+
+
+#
+# systemd
+#
+systemd_max_logs_disk_space: 50M
+
+#
+# docker
+#
+docker_max_log_files: 2
+docker_max_log_size: 5m

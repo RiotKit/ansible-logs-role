@@ -1,0 +1,6 @@
+- include: logrotate.yml
+  when: configure_logrotate|bool
+- include: systemd.yml
+  when: configure_systemd|bool
+- include: docker.yml
+  when: configure_docker|bool

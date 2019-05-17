@@ -1,0 +1,4 @@
+- include_role: debops.logrotate
+  tags: ['role::logrotate']
+  vars:
+      logrotate__enabled: yes
