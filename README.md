@@ -7,3 +7,7 @@ Features:
 - Log rotation (uses external role debops.lograte)
 - Docker daemon logging limits
 - Systemd logging limits
+
+Requires:
+- debops.logrotate role
+
