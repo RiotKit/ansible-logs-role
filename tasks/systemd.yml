@@ -1,3 +1,9 @@
+- name: Make sure the journald.conf.d exists
+  become: yes
+  file:
+      path: /etc/systemd/journald.conf.d/
+      state: directory
+
 - name: Configure systemd journal max. disk usage
   become: yes
   template:
