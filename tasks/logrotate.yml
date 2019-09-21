@@ -3,3 +3,4 @@
   tags: ['role::logrotate']
   vars:
       logrotate__enabled: yes
+      ansible_become: yes
