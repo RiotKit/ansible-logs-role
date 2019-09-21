@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Andrew Johnson
+  description: Logging
+  company: RiotKit
+  license: MIT
+  min_ansible_version: 1.2
+
+  galaxy_tags:
+    - logs
+    - systemd
+    - journald
+    - riotkit
+    - anarchist
+
+dependencies: []

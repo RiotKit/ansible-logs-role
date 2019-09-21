@@ -20,4 +20,5 @@ logrotate__config:
 #
 # systemd
 #
-systemd_max_logs_disk_space: 50M
+systemd_max_logs_disk_space: 100M
+systemd_max_file_sec: 1month
