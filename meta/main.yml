@@ -1,6 +1,6 @@
 galaxy_info:
   author: Andrew Johnson
-  description: Logging
+  description: Logging tweaking role
   company: RiotKit
   license: MIT
   min_ansible_version: 1.2
