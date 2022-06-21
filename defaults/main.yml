@@ -20,5 +20,11 @@ logrotate__config:
 #
 # systemd
 #
-systemd_max_logs_disk_space: 100M
+systemd_max_logs_disk_space: 100M  # used when using persistent storage
 systemd_max_file_sec: 1month
+systemd_storage: persistent        # persistent or volatile (in-memory)
+systemd_runtime_max_use: 100M      # used when set to `volatile` storage
+systemd_compress: 1K
+systemd_sync_interval: 600  # 10 minutes
+systemd_forward_to_console: no
+systemd_forward_to_syslog: no
